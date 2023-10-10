@@ -10,6 +10,7 @@ lock () {
 }
 
 wait_and_lock () {
+  set -x
   local file="${1}.lock"
   local max_attempts="${2:-5}"
 
