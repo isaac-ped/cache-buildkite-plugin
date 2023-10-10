@@ -11,6 +11,7 @@ lock () {
 
 wait_and_lock () {
   set -x
+  mkdir -p "$(dirname ${1})"
   local file="${1}.lock"
   local max_attempts="${2:-5}"
 
