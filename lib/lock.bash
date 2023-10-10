@@ -6,7 +6,7 @@ lock () {
   (
     set -o noclobber
     date > "${file}"
-  ) 2>/dev/null
+  )
 }
 
 wait_and_lock () {
